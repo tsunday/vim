@@ -1,7 +1,7 @@
 " General settings
 set encoding=utf-8
 set clipboard=unnamed
-let mapleader=","
+let mapleader=" "
 set mouse=a
 set nocompatible
 set ignorecase
@@ -13,9 +13,9 @@ set splitbelow
 set splitright
 
 " Enable folding
-set foldmethod=indent
-set foldlevel=99
-nnoremap <space> za
+" set foldmethod=indent
+" set foldlevel=99
+" nnoremap <space> za
 
 " Syntax check
 syntax on
