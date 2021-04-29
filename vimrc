@@ -12,11 +12,6 @@ filetype off
 set splitbelow 
 set splitright
 
-" Enable folding
-" set foldmethod=indent
-" set foldlevel=99
-" nnoremap <space> za
-
 " Syntax check
 syntax on
 let python_highlight_all=1
@@ -30,6 +25,11 @@ set showmatch
 set nu
 
 " Tree
+let g:netrw_liststyle=3
+let g:netrw_banner=0
+let g:netrw_browse_split=0
+let g:netrw_winsize=80
+map <C-n> :Explore<CR>
 " map <C-n> :NERDTreeToggle<CR>
 " let NERDTreeIgnore=['\.pyc$', '\~$', '^__pycache__$']
 
@@ -54,7 +54,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'vim-syntastic/syntastic'
 " Plugin 'nvie/vim-flake8'
 " Plugin 'jnurmine/Zenburn'
-" Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
